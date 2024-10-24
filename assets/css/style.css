@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Alegreya', serif;
+    
+}
+ul{
+    list-style: none;
+}
+.option{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    background-color: #fff;
+    width: 50px;
+    height: 100px;
+    z-index: 999999999;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.option li a{
+    font-size:20px;
+    padding-top:15px;
+    display: block;
+    margin-left:10px;   
+    color: #000; 
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    background-image: url('../img/header.jpg');
+    background-size: cover; 
+    text-align: center;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    /* بشيل ال اوفر فلو هدن اذا استخدمت البادنج  */
+
+}
+.overlay{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.navbar{
+    overflow: hidden;
+    /* margin-top: 20px; */
+    padding-top: 30px; 
+    /* في هاي الحالة المارجن والبادنج نفس الاشي لو استخدمت المارجن بدك تروح على الاب 
+    وتعطيه اوفر فلو هيدير بس اذا استخدمت البادنج بلزمش  */
+
+
+}
+.navbar .logo{
+    float: left;
+    width: 40%;
+}
+.navbar .logo img{
+    width: 20%;
+}
+.navbar .nav{
+    float: left;
+    width: 60%;
+    padding-top: 12px;
+    margin-left: 0px;
+}
+.navbar .nav .list-item{
+    display: inline-block;
+    margin-left: 25px;
+}
+.navbar .nav .list-item a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.header-content{
+    margin-top: 60px;
+    /* padding-top: 80px; */
+    /* عشان انزل الهيجر كونتاند لتحت شوي 
+    يا اما بستخدم المارجن توب وبحل مشكلة المارجن كولابس 
+    الي بتطلع من خلال اني بعطي الاب اوفر فلو :هدن
+    او اني بدل ما استخدم مارجن بستخدم بادنج توب  */
+
+}
+.header-content h1{
+    font-size: 76px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.header-content p{
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 25px;
+}
+.header-content img{
+    width: 25%;
+}
+.btn{
+    padding: 15px 35px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px; 
+    
+}
+.btn-learn{
+    background-color:#c1ab84;
+    color: #fff;
+    margin-right: 10px;
+}
+.btn-learn:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.7s;
+
+}
+.btn-visit:hover{
+    background-color: #c4c2c2;
+
+    transition: 0.7s;
+
+}
+.about{
+    /* margin-top: 50px; */
+}
+.about .container{
+    overflow: hidden;
+     margin-top: 90px;
+     margin-bottom:30px;
+}
+/* start about section */
+.about-img{
+    float: left;
+    width: 40%;
+}
+.about-img img{
+    width: 100%;
+}
+.about-content{
+    float: left;
+    width: 60%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about-content h2{
+    font-size:36px;
+    color: #253048;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.about-content h3{
+    font-size:28px;
+    font-weight: normal;
+    color:#c1ab84;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+.about-content p{
+    font-size:18px;
+    line-height: 30px;
+    width: 70%;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 40px;
+    
+}
+.about-content ul li{
+
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.about-content ul li i{
+    background-color: #c1ab84;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 50px;
+    /* اللاين هاي لمة يكون عندي مربع ومعطيه ارتفاع وجواه عنصر 
+    اذا بدي اجيب العنصر في وسط المربع 
+    بعطيه لاين هاي بنفس ارتفاع المربع الي هو جواه 
+     */
+    /* padding-top: 25px;
+    padding-left: 12.5px;
+    padding-right: 12.5px; */ 
+    /* ممكن استخدم البادنج بدل اللاين هاي  */
+    float: left;
+}
+.about-content ul li span{
+    float: left;
+    margin-top: 14px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* end of the about section  */
+
+/* Reviewers section */
+.reviewers{
+    background-color: #f7f6f6;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.reviewers .container{
+    overflow: hidden; 
+}
+.reviewers-img{
+    float: left;
+    width: 40%;
+     
+}
+.reviewers-img img{
+    width: 100%;
+}
+.reviewers-content{
+    float: left;
+    width: 60%;
+}
+.reviewers-content h2{
+    font-size: 36px;
+    color: #253048;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.reviewers-content h3{
+    font-size: 28px;
+    color: rgb(193, 171, 132);
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+.reviewers-content p{
+    font-size: 18px;
+    line-height: 30px;
+    color:rgb(104, 104, 104);
+    font-weight: 400;
+    margin-bottom: 35px;
+    width: 80%;
+}
+.reviewers-content ul li {
+    margin-top: 23px;
+}
+.reviewers-content ul li i{
+    color: #c1ab84;
+    font-size: 22px;
+}
+.reviewers-content ul li span{
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+}
+/* end Reviewers*/
+.cover{
+    background-image: url(../img/shutterstock_280369721.jpg);
+    /* height: 60vh; */
+    /* او بدل الارتفاع ممكن نستخدم البادنج */
+    padding: 250px 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* start dishes */
+.dishes{
+    padding: 55px 0;
+}
+.dishes .container{
+    /* overflow: hidden; */
+    text-align: center;
+    /* margin: auto; */
+}
+.dishes .container h2{
+    color: rgb(37, 48, 72);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 49px;
+}
+.dishes .container h3{
+    color: rgb(193, 171, 132);
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    margin: 20px 0;
+}
+.first-dishe{
+    overflow: hidden;
+    
+}
+.f-dishe{
+    float: left;
+    width: 29%;
+    padding: 20px;
+}
+.second-dishe{
+    overflow: hidden;
+}
+
+.f-dishe img{
+    width: 100%;
+}
+
+.f-dishe h4{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(37, 48, 72);
+    margin: 30px 0;
+    
+}
+.f-dishe p{
+    font-size:20px;
+    font-weight:400 ;
+    color: rgb(104, 104, 104);
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+.btn2{
+    padding: 20px 35px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px; 
+    background-color:#c1ab84;
+    color: #fff;
+
+}
+.btn-dishe:hover{
+    background-color: #fff;
+    color: #000;
+    cursor:pointer;
+}
+/* end dishes */
+
+/* start testimonials */
+.testimonials{
+    background-image: url(../img/header.jpg);
+    /* padding: 250px 0; */
+    height: 80vh;
+    background-size: cover;
+    /* overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-items: center; */
+    
+}
+.info{
+    height: 70%;
+    width: 71%;
+    /* background-color: rgb(248, 236, 10); */
+    margin: auto;
+    text-align: center;
+    /* overflow: hidden; */
+    /* margin-top: 80px; */
+    
+}
+.testimonials .info i{
+    font-weight: 400;
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.testimonials .info h2{
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.testimonials .info p{
+    font-weight: 400;
+    font-size: 26px;
+    /* background-color: #253048; */
+    color: #fff;
+    line-height: 53px;
+    margin-bottom: 50px;
+    
+}
+.overlay2{
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+
+}
+.ov{
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.d1{
+    /* background-color: rgb(59, 158, 34); */
+    margin-bottom: 20px;
+    font-size:20px;
+    color: #fff;
+
+}
+.d2{
+    /* background-color: rgb(59, 158, 34); */
+    margin-bottom: 20px;
+    font-size:18px ;
+    color: #fff;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.LR{
+
+    width: 78px;
+    height: 50px;
+    overflow: hidden;
+    margin: auto;
+
+}
+ .left-right{
+    height: 30px;
+    width: 30px;
+    background-color:transparent;
+    float: left;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+.left-right:hover{
+    background-color: #fff;
+    color: #000;
+}
+.ll{
+    color: #fff;
+}
+.ll:hover{
+    color: #000;
+}
+
+
+/* start our details */
+
+.our-details{
+    background-color: #f7f6f6;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.our-details .container{
+    overflow: hidden; 
+    /* هاي ال 3 اسطر الي تحت عشان تحط عنصر الدف
+    في وسط البوه بالزبط يعني الكنتينر في 2 دف 
+    واحد للمعلومات والثاني ل الصورة هذول 
+    ال 2 الدف بيجو جنب بعض بلوسط بالنسبة ل الارتفاع
+    */
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.our-details-img{
+    float: left;
+    width: 40%;
+     
+}
+.our-details-img img{
+    width: 100%;
+}
+.our-details-content{
+    float: left;
+    width: 60%;
+    
+}
+.our-details-content h2{
+    font-size: 36px;
+    color: #253048;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.our-details-content p{
+    font-size: 18px;
+    line-height: 30px;
+    color:rgb(104, 104, 104);
+    font-weight: 400;
+    margin-bottom: 35px;
+    width: 80%;
+}
+.our-details-content ul li {
+    margin-top: 23px;
+}
+.our-details-content ul li i{
+    background-color: #c1ab84;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.our-details-content ul li span{
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+}
+
+/* start about us */
+.aboutus{
+    background-color: #403d38;
+    height: 65vh;
+}
+.aboutus .container{
+    /* background-color: #c1ab84; */
+    height:55vh;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+}
+.allsec{
+    width: 100%;
+    height: 70%;
+    /* background-color: #fff; */
+    /* margin-top: 50px; */
+    overflow: hidden;
+    
+}
+.wed{
+    width:23%;
+    float: left;
+    padding: 0 12.5px;
+    color: #fff;
+    
+}
+.wed h4{
+    font-size: 20px;
+    margin-bottom: 22px;
+    font-weight: 400;
+}
+.aboutus-info p{
+    /* background-color: blueviolet; */
+    margin-bottom: 30px;
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+    line-height: 30px;
+}
+.usefullinks ul li a{
+    /* background-color: chartreuse; */
+    text-decoration: none;
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+    /* margin-bottom: 15px; */
+}
+.usefullinks ul li a:hover{
+    color: #fff;
+    transition: 0.6s;
+}
+.usefullinks ul li hr{
+    margin: 15px 0;
+    opacity: .1;
+}
+.usefullinks ul li i{
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+}
+/*  */
+.openinghours ul li i{
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+}
+.openinghours ul li hr{
+    margin: 15px 0;
+    opacity: .1;
+}
+.openinghours ul li span{
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+}
+.contactdetails ul li i{
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+    margin-right: 15px;
+}
+.contactdetails ul li hr{
+    margin: 15px 0;
+    opacity: .1;
+}
+.contactdetails ul li a{
+    text-decoration: none;
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+}
+.contactdetails ul li a:hover{
+    color: #fff;
+    transition: 0.6s;
+}
+.contactdetails ul li span{
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+}
+/* end about us */
+
+/* start last */
+.last{
+    height: 47vh;
+    background-color: #353330;
+    padding: 4% 0;
+}
+.last .container{
+    height: 100%;
+    /* background-color: red; */
+}
+.aa{
+    height: 70%;
+    width: 30%;
+    /* background-color: #000; */
+    /* background-image: url(../img/restaurant.png); */
+    margin: auto;
+    /* text-align: left; */
+    background-repeat: no-repeat;
+}
+.bb{
+    height: 6%;
+    width: 30%;
+    /* background-color: #efe3e3; */
+    margin: auto;
+}
+.bb p{
+    color: #969696;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+.cc{
+    height: 24%;
+    width: 30%;
+    /* background-color: #13c23c; */
+    margin: auto;
+    text-align: center;
+    margin-top: 35px;
+}
+.cc a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #969696;
+    opacity: 1;
+    
+    display: inline-block;
+    height: 60px;
+    width: 60px; 
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #484540;
+    /* padding: 10px; */
+}
+.cc .face:hover{
+    color: #fff;
+    background-color:#3b5998;
+}
+.cc .insta:hover{
+    color:#fff;
+    background-color: #125688;
+}
+.cc .tum:hover{
+    color: #fff;
+    background-color: #32506d;
+}
+.cc .twitt:hover{
+    color: #fff;
+    background-color: #00aced;
+}
+/* end last */
